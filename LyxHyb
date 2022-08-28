@@ -1,0 +1,69 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("LyxHyb", "GrapeTheme")
+
+-- Tabs
+local Tab = Window:NewTab("Reach")
+local Section = Tab:NewSection("")
+Section:NewButton("Reach", "", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/tsbVWZdP', true))()
+end)
+
+-- Tabs 2
+local Tab = Window:NewTab("Developers")
+local Section = Tab:NewSection("")
+Section:NewLabel("Xaliroles#7856")
+Section:NewLabel("Bebewm")
+Section:NewLabel("Xheptc")
+
+local Tab = Window:NewTab("Settings")
+local Section = Tab:NewSection("")
+
+-- Tab 3
+Section:NewToggle("Anti-afk", "ToggleInfo", function(state)
+    if state then
+        print("Toggle On")
+    else
+        print("Toggle Off")
+    end
+end)
+
+Section:NewToggle("Anti-kick", "ToggleInfo", function(state)
+    if state then
+        print("Toggle On")
+    else
+        print("Toggle Off")
+    end
+end)
+
+Section:NewToggle("Anti-Blur", "ToggleInfo", function(state)
+    if state then
+        print("Toggle On")
+    else
+        print("Toggle Off")
+    end
+end)
+
+Section:NewToggle("Anti-ban", "ToggleInfo", function(state)
+    if state then
+        print("Toggle On")
+    else
+        print("Toggle Off")
+    end
+end)
+
+Section:NewToggle("Always Top", "ToggleInfo", function(state)
+    if state then
+        print("Toggle On")
+    else
+        print("Toggle Off")
+    end
+end)
+
+
+Section:NewTextBox("TextboxText", "F9", function(txt)
+    print(txt)
+end)
+
+Section:NewKeybind("V", "KeybindInfo", Enum.KeyCode.V, function()
+    Library:ToggleUI()
+end)
